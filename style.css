@@ -34,7 +34,7 @@ header {
 main > h2 {
     margin: 3% auto 2% auto;
     width: 90vw;
-
+    max-width: 740px;
 }
 
 .our-services {
