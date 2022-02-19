@@ -5,6 +5,26 @@
 }
 
 html {
-    font-size: 62.5;
+    font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*HEADER*/
+header {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat( 2 , minmax( min-content , 740px ) );
+    grid-template-rows: minmax( min-content , 360px );
+    justify-content: center;
+    margin: 2% 2% 0% 2%;
+    border-bottom: solid lightgray 5px;
+}
+
+.hero-intro {
+    font-size: 1.2rem;
+}
+
+.hero-img {
+    width: 100%;
+}
+
