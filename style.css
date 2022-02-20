@@ -38,15 +38,25 @@ header {
     color: lightslategrey;
 }
 
+.hero-intro > p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
 .button {
     font-size: 1.6rem;
-    width: 60%;
+    width: auto;
     padding: 0.8rem;
     border: 0;
     border-radius: 3.2rem;
     color: white;
     font-weight: 600;
     background: linear-gradient(to bottom, orange, #FD5602);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #FD5602;
 }
 
 /*OUR SERVICES*/
@@ -64,7 +74,7 @@ main > h2 {
     width: 90vw;
     max-width: 740px;
     display: grid;
-    grid-template-columns: repeat( 4 , 1fr );
+    grid-template-columns: repeat( auto-fit , minmax( 150px , 1fr ) );
     gap: 1.6rem;
     place-items: center;
     margin: 0 auto 0 auto;
@@ -73,6 +83,7 @@ main > h2 {
 .dishes {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .video {
@@ -84,7 +95,7 @@ main > h2 {
     width: 90vw;
     max-width: 740px;
     display: grid;
-    grid-template-columns: repeat( 5 , 1fr );
+    grid-template-columns: repeat( auto-fit , minmax( 100px , 1fr ) );
     gap: 1.6rem;
     place-items: center;
     margin: 0 auto 5% auto;
